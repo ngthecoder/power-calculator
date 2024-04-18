@@ -1,4 +1,10 @@
 # Power Calculator
+## Application Overview
+This Power Calculator application allows users to calculate the power of a number using a base and an exponent provided by the user. It is built with simple HTML, CSS, and JavaScript files for the frontend, providing an intuitive user interface.
+
+On the backend, AWS services are utilized to handle calculations and data storage. AWS Lambda functions handle the calculation logic, triggered by API Gateway endpoints. The results are stored in Amazon DynamoDB for future reference.
+### Usage
+To calculate the power of a number, users input the base and exponent values into the designated fields and click the "Calculate" button. The application then processes the input and returns the calculated result on the screen.
 ## Application Interface
 ![Application Interface](/images/application-interface.png)
 ## AWS Architecture
