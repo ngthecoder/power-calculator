@@ -7,9 +7,9 @@ const calculatePower = () => {
     var myHeaders = new Headers();
     
     myHeaders = {
-        "Content-Type":"application/json",
         "Access-Control-Allow-Origin":"*",
-        "Access-Control-Allow-Methods":"POST,PATCH,OPTIONS"
+        "Access-Control-Allow-Methods":"GET,POST,OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Typee"
     };
     
     var raw = JSON.stringify(
