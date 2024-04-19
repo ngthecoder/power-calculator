@@ -21,4 +21,16 @@ Services used:
 - Amazon DynamoDB:
     - Stores calculation results provided by the AWS Lambda function.
 ## Dealing with Cross-Origin Resource Sharing (CORS) Issues
-When making requests from my web application to the backend API hosted on a different domain, I received CORS policy violation errors.
+### Problem:
+When making requests from my web application to the backend API hosted on a different domain, I received CORS policy violation errors as follow:
+Access to fetch at 'API ENDPOINT' from origin 'APPLICATION URL' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled.
+### Solution
+1. Recreated the API
+    - Ensured that the API was created and deployed correctly.
+    - Enabled CORS policy to allow requests from specific origins.
+        - [Link to AWS Documentation on CORS Configuration](https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-cors.html)
+2. Tested the API
+    - Checked for successful response (HTTP status code 200) and presence of necessary CORS headers.
+        - [Link to AWS Documentation on CORS Testing](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-test-cors.html)
+3. Updating the calculatePower Function in index.js
+    - Modified the headers to include "Content-Type": "application/json".
