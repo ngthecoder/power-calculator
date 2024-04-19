@@ -20,3 +20,6 @@ Services used:
     - Grants necessary permissions for the Lambda function to write results to DynamoDB.
 - Amazon DynamoDB:
     - Stores calculation results provided by the AWS Lambda function.
+
+## Dealing with Cross-Origin Resource Sharing (CORS) Issues
+When making requests from my web application to the backend API hosted on a different domain, I received CORS policy violation errors.
