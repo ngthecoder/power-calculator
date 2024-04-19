@@ -1,6 +1,6 @@
 # Power Calculator
 ## Application Overview
-This Power Calculator application allows users to calculate the power of a number using a base and an exponent provided by the user. It is built with simple HTML, CSS, and JavaScript files for the frontend, providing an intuitive user interface.
+This [Power Calculator](https://main.d2lo9tdznqi5ih.amplifyapp.com/) application allows users to calculate the power of a number using a base and an exponent provided by the user. It is built with simple HTML, CSS, and JavaScript files for the frontend, providing an intuitive user interface.
 
 On the backend, AWS services are utilized to handle calculations and data storage. AWS Lambda functions handle the calculation logic, triggered by API Gateway endpoints. The results are stored in Amazon DynamoDB for future reference.
 ### Usage
