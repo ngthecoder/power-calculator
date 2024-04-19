@@ -13,7 +13,7 @@ Services used:
 - Amplify:
     - Deployed the application from Git Repository.
 - Amazon API Gateway:
-    - Acts as a trigger for a Lambda function, enabling communication between the client and backend.
+    - Deployed REST API that acts as a trigger for a Lambda function, enabling communication between the client and backend.
 - AWS Lambda:
     - Executes a function to calculate a power using base and exponent provided by the client.
 - AWS Identity and Access Management (IAM):
