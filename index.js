@@ -26,7 +26,7 @@ const calculatePower = () => {
         redirect: 'follow'
     };
     
-    fetch("https://onn2zqvh3m.execute-api.us-east-1.amazonaws.com/dev", requestOptions)
+    fetch("https://onn2zqvh3m.execute-api.us-east-1.amazonaws.com/build/", requestOptions)
     .then(response => response.text())
     .then(result => alert(JSON.parse(result).body))
     .catch(error => console.log('error', error));
